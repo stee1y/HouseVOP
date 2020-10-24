@@ -1,0 +1,14 @@
+{
+  "name": "housevop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "test": "browser-sync start --server --files \"*.html,css/*.*,js/*.*, images/*.*\"\n"
+  },
+  "author": "Eremeev Ivan",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}

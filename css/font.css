@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url('../fonts/Raleway-Regular.svg#Raleway-Regular') format('svg'),
+       url('../fonts/Raleway-Regular.ttf') format('truetype'),
+       url('../fonts/Raleway-Regular.woff') format('woff'),
+       url('../fonts/Raleway-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url('../fonts/Roboto-Light.svg#Roboto-Light') format('svg'),
+    url('../fonts/Roboto-Light.ttf') format('truetype'),
+    url('../fonts/Roboto-Light.woff') format('woff'),
+    url('../fonts/Roboto-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplay-Bold';
+    src: url('../fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg'),
+    url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+    url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
+    url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
