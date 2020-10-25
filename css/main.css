@@ -46,7 +46,6 @@ input {
 }
 
 
-
 /* header */
 
 .header {
@@ -102,7 +101,7 @@ input {
 }
 
 .header__title {
-    margin-top: 22%;
+    margin-top: 20vh;
     text-align: center;
     line-height: 3.75rem;
     letter-spacing: .15rem;
@@ -113,12 +112,11 @@ input {
     text-align: center;
 }
 
-.header__address,
-.header__phone {
+.header__link {
     display: block;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10vh;
 }
 
 .header__address:hover path,
@@ -137,22 +135,7 @@ input {
 }
 
 .advantages {
-    margin: 120px auto;
-}
-
-.advantages .container {
-    position: relative;
-}
-
-.advantages .container:after {
-    position: absolute;
-    content: 'II';
-    font-family: "PlayfairDisplay-Bold";
-    opacity: .02;
-    font-size: 25rem;
-    top: 50%;
-    left: 105%;
-    transform: translate(-50%,-50%);
+    margin: 50px auto;
 }
 
 .advantages__item {
@@ -160,28 +143,14 @@ input {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 30px;
+    margin-bottom: 50px;
     font-family: "Roboto-Light";
     font-size: 1.25rem;
 }
 
 .advantages__text {
-    margin-top: 50px;
+    margin-top: 30px;
     width: 200px;
-}
-
-.appartments .container {
-    position: relative;
-}
-.appartments .container:before {
-    position: absolute;
-    content: 'III';
-    font-family: "PlayfairDisplay-Bold";
-    opacity: .02;
-    font-size: 25rem;
-    top: 25%;
-    left: 1%;
-    transform: translate(-50%,-50%);
 }
 
 .appartments__carousel {
@@ -262,41 +231,8 @@ input {
     padding-bottom: 60px;
 }
 
-.video .container {
-    position: relative;
-}
-
-.video .container:after {
-    position: absolute;
-    content: 'IV';
-    font-family: "PlayfairDisplay-Bold";
-    opacity: .02;
-    font-size: 25rem;
-    top: 50%;
-    left: 100%;
-    transform: translate(-50%,-50%);
-}
-
-.video__block {
-    height: 75vh;
-}
-
 .map {
     padding: 60px 0;
-}
-
-.map .container {
-    position: relative;
-}
-.map .container:before {
-    position: absolute;
-    content: 'V';
-    font-family: "PlayfairDisplay-Bold";
-    opacity: .02;
-    font-size: 25rem;
-    top: 40%;
-    left: 0;
-    transform: translate(-50%,-50%);
 }
 
 .map__title {
@@ -373,7 +309,8 @@ input {
         top: 0;
         right: 0;
         height: 50px;
-        background-color: #242B33;
+        /*background: linear-gradient(0deg, rgba(36,43,51,0.6502976190476191) 0%, rgba(29,34,41,0.9976365546218487) 100%);*/
+        background: linear-gradient(0deg, rgba(36,43,51,0.6194852941176471) 0%, rgba(29,34,41,0.9976365546218487) 100%);
         opacity: .8;
         z-index: 1;
     }
@@ -474,7 +411,7 @@ input {
     }
 
     .advantages {
-        margin-top: 0;
+        margin-top: 30px;
         margin-bottom: 50px;
     }
 
@@ -515,7 +452,7 @@ input {
     }
 
     .questions {
-        padding: 50px;
+        padding: 50px 0;
     }
 
     .footer {
