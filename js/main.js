@@ -17,24 +17,17 @@ $(document).ready(function () {
         heightDocument = $(document).height();
         heightHiddenMenu = heightDocument - heightWindow;
 
-        console.log(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (widthWindow >= 700 && heightWindow >= 700) )
-        console.log('he', heightWindow)
-        console.log('wi', widthWindow )
-
-        if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && (widthWindow <= 700) && (heightWindow <= 700) ) {
+        if ((/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) && (widthWindow <= 500) || (heightWindow <= 500) ) {
             mobile();
         } else {
-            console.log(widthWindow <= 700 && heightWindow <= 700)
             $('.header__down').css({'display': 'block'})
-            $('.header__title').css({'margin-bottom': 100})
-            $('.header__title').css({'margin-top': '20vh'})
+            $('.header__title').css({'margin-bottom': 100, 'margin-top': '20vh'})
         }
     });
 
     function mobile() {
         $('.header__down').css({'display': 'none'})
-        $('.header__title').css({'margin-bottom': 0})
-        $('.header__title').css({'margin-top': 30})
+        $('.header__title').css({'margin-bottom': 0, 'margin-top': 30})
     }
 
     $(window).scroll(function(){
