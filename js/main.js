@@ -47,15 +47,11 @@ $(document).ready(function () {
     })
 
     $("body").on('click', '[href*="#"]', function(e){
-        if (e.currentTarget.attributes.href.value === '#test-form') {
-            $('.popup-with-form').magnificPopup()
-        } else {
-            var fixed_offset = 100;
-            $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
-            if ($('.header__burger, .nav-list--menu').hasClass('active')) {
-                $('.header__burger, .nav-list--menu').toggleClass('active');
-                $('body').toggleClass('lock');
-            }
+        const fixed_offset = 100;
+        $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+        if ($('.header__burger, .nav-list--menu').hasClass('active')) {
+            $('.header__burger, .nav-list--menu').toggleClass('active');
+            $('body').toggleClass('lock');
             e.preventDefault();
         }
     });

@@ -27,8 +27,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-    margin: 0;
-    margin-bottom: 100px;
+    margin: 0 0 100px 0;
     padding: 0;
     font-family: "PlayfairDisplay-Bold";
     font-weight: bold;
@@ -45,13 +44,20 @@ input {
     cursor: pointer;
 }
 
+.title-hidden {
+    font-size: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
 
 /* header */
 
 .header {
     width: 100%;
     height: 100vh;
-    background-image: url(../images/min.jpg);
+    background-image: url(../images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -135,7 +141,20 @@ input {
 }
 
 .advantages {
+    position: relative;
     margin: 50px auto;
+}
+
+.advantages:before {
+    position: absolute;
+    content: 'II';
+    top: 0;
+    right: 8%;
+    line-height: 10rem;
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 25rem;
+    color: #fff;
+    opacity: 0.02;
 }
 
 .advantages__item {
@@ -153,15 +172,31 @@ input {
     width: 200px;
 }
 
-.appartments__carousel {
+.apartments {
+    position: relative;
+}
+
+.apartments:before {
+    position: absolute;
+    content: 'III';
+    top: 13%;
+    left: 9%;
+    line-height: 10rem;
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 25rem;
+    color: #fff;
+    opacity: 0.02;
+}
+
+.apartments__carousel {
     margin-bottom: 30px;
 }
 
-.appartments__item {
+.apartments__item {
     position: relative;
     display: block;
 }
-.appartments__info {
+.apartments__info {
     position: absolute;
     top: 75%;
     left: 9%;
@@ -228,11 +263,37 @@ input {
 }
 
 .video {
+    position: relative;
     padding-bottom: 60px;
 }
 
+.video:before {
+    position: absolute;
+    content: 'IV';
+    top: 25%;
+    right: 1%;
+    line-height: 10rem;
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 25rem;
+    color: #fff;
+    opacity: 0.02;
+}
+
 .map {
+    position: relative;
     padding: 60px 0;
+}
+
+.map:before {
+    position: absolute;
+    content: 'V';
+    top: 25%;
+    left: 13%;
+    line-height: 10rem;
+    font-family: "PlayfairDisplay-Bold";
+    font-size: 25rem;
+    color: #fff;
+    opacity: 0.02;
 }
 
 .map__title {
@@ -277,13 +338,14 @@ input {
 }
 
 .nav-list__item {
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 .footer .nav-list__item a {
     padding: 5px 0;
 }
 .footer .social-list__item a {
+    font-size: 0;
     transition: all .3s ease;
     padding: 5px 10px;
 }
@@ -295,6 +357,14 @@ input {
 }
 
 
+@media (max-width: 1900px) {
+    .advantages:before,
+    .apartments:before,
+    .video:before,
+    .map:before {
+        font-size: 0;
+    }
+}
 @media (max-width: 767px) {
 
     body.lock {
@@ -419,7 +489,7 @@ input {
         margin-top: 20px;
     }
 
-    .appartments__title {
+    .apartments__title {
         margin-bottom: 30px;
     }
 
